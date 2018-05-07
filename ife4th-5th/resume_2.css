@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif,"Times New Roman",SimSun;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+}
+h1 {
+    float: left;
+    box-sizing: border-box;
+    width: 250px;
+    height: 755px;
+    margin: 0 10px;
+    padding-top: 60px;
+    text-align: center;
+    color: #FFF;
+    background-color: #1E90FF;
+}
+.content {
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.contact h3, p {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.information h3, p {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+p, a {
+    margin: 0 2em 0 0;
+}
+.moreinfor h3 {
+    margin: 18px 0px 0px 0px;
+}

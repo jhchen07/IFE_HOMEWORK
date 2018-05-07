@@ -1,0 +1,32 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid #4682B4;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5px;
+}
+h2 {
+    margin:15px 0px;
+}
+.information h3 {
+    display:inline-block;
+    margin:8px 0px;
+}
+.contact h3 {
+    display:inline-block;
+    margin:8px 0px;
+}
+.information a,p {
+    display:inline-block;
+    margin:0px 40px 0px 8px;
+}
+.moreinfor h3 {
+    margin: 23px 0 0 0;
+}
+.moreinfor p {
+    margin: 0 40px 0 0;
+}
+a {
+    margin: 0 2em 0 1em;
+}

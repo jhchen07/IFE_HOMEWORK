@@ -1,0 +1,84 @@
+body{
+  font:100% "Times New Roman","宋体";
+  margin:2px;
+  padding:4px;
+}
+.left{
+  position:absolute;
+  width:240px;
+  height:1300px;
+  background:#008B8B;
+  color:white;
+}
+.article{
+  position:absolute;
+  left:250px;
+}
+.article ul{
+  padding:15px 0px;
+}
+img{
+  /*position:relative;
+  left:20px;*/
+  margin:2px auto;
+  padding:2px;
+}
+h1{  
+  line-height:100%;
+  letter-spacing:1em;
+  text-shadow:2px 2px 5px #ccc;
+  margin:10px;
+  padding:10px;
+}
+h2{
+  font-size:1.5em;
+  background: #008B8B;
+  border-color:#191970;
+  border-style:solid;
+  border-width:3px;
+  margin:0px;
+  /*border:3px solid #DC143C;*/
+}
+p{
+  text-indent:2em;
+  font-size:18px;
+  font-weight:bold;
+  padding: 0px;
+}
+ul{
+  margin:2px;
+}
+li{
+	font-size:1.25em;
+	font-weight:bold;
+	color:#191970;
+  list-style-position: inside;
+}
+
+.information ul{
+  position:relative;
+  top:20px;
+  padding:20px;
+}
+.information li{
+  color:white;
+  list-style-type: none;
+}
+.experience li{
+  list-style-type:none;
+}
+.skills li{
+  list-style-type: upper-alpha;
+}
+a{
+  font-size:16px;
+}
+a:link{
+  color:white;
+}
+a:hover{
+  color:red;
+}
+a:visited,a:active{
+  color:purple;
+}
