@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #2E8B57;
+}
+.left,
+.right {
+    margin: 0;
+    border: 1px solid #2E8B57;
+}
+.byfloat .type1 p {
+    display: inline-block;
+}
+.byfloat .type1 .left {
+    float: left;
+    width: 30%;
+}
+.byfloat .type1 .right {
+    float: right;
+    width: 70%;
+}
+
+
+.byfloat .type2 {
+    clear: both;
+}
+.byfloat .type2 .left {
+    float: left;
+    width: 200px;
+}
+.byfloat .type2 .right {
+    margin-left: 200px;
+}
+
+.byfloat .type3 {
+    clear: both;
+}
+.byfloat .type3 .left {
+    margin-right: 200px;
+}
+.byfloat .type3 .right {
+    float: right;
+}
+.byfloat .type4 {
+    clear: both;
+}
