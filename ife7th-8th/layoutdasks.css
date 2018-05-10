@@ -4,18 +4,23 @@ body {
     border: 1px solid #2E8B57;
 }
 .left,
-.right {
-    margin: 0;
+.right,
+.main {
+    box-sizing: border-box;
     border: 1px solid #2E8B57;
 }
+
+
 .byfloat .type1 p {
     display: inline-block;
 }
 .byfloat .type1 .left {
+    box-sizing: border-box;
     float: left;
     width: 30%;
 }
 .byfloat .type1 .right {
+    box-sizing: border-box;
     float: right;
     width: 70%;
 }
@@ -32,15 +37,23 @@ body {
     margin-left: 200px;
 }
 
+
 .byfloat .type3 {
     clear: both;
 }
+
 .byfloat .type3 .left {
+    float: right;
     margin-right: 200px;
 }
 .byfloat .type3 .right {
     float: right;
+    width: 200px;
 }
+
 .byfloat .type4 {
     clear: both;
+}
+.byfloat .type4 {
+
 }
