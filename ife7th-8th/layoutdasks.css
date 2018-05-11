@@ -10,7 +10,7 @@ body {
     border: 1px solid #2E8B57;
 }
 
-
+/*使用浮动达到五种布局效果*/
 .byfloat .type1 p {
     display: inline-block;
 }
@@ -89,6 +89,8 @@ body {
     width: calc(100% - 400px);
 }
 
+
+/*使用position达到五种布局效果*/
 .byposition {
     clear: both;
     background-color: #E0FFFF;
@@ -125,4 +127,113 @@ body {
     width: 200px;
 }
 
+
 /*必须结合浮动才能形成圣杯布局*/
+.byposition .type4 .left,
+.byposition .type4 .right,
+.byposition .type4 .main {
+    float: left;
+    position: absolute;
+}
+.byposition .type4 .left {
+    width: 200px;
+}
+.byposition .type4 .right {
+    width: 200px;
+    right: 0;
+}
+.byposition .type4 .main {
+    width: calc(100% - 400px);
+    margin: 0 200px 0 200px;
+}
+
+
+.byposition .type5 .left,
+.byposition .type5 .right,
+.byposition .type5 .main {
+    overflow: hidden;
+    position: relative;
+}
+.byposition .type5 .left{
+    top: 55px;
+    width: 200px;
+}
+.byposition .type5 .right {
+    left: 200px;
+    width: 200px;
+}
+.byposition .type5 .main {
+    top: -55px;
+    left: 400px;
+    width: calc(100% - 400px);
+}
+
+
+/*使用flexbox达到五种布局效果*/
+.byflexbox {
+    background-color: #AFEEEE;
+}
+.byflexbox .type1 {
+    display: flex;
+}
+.byflexbox .type1 .left {
+    width: 30%;
+}
+.byflexbox .type1 .right {
+    width: 70%;
+}
+
+
+.byflexbox .type2 {
+    display: flex;
+}
+.byflexbox .type2 .left {
+    width: 200px;
+}
+.byflexbox .type2 .right {
+    width: calc(100% - 200px);
+}
+
+
+.byflexbox .type3 {
+    display: flex;
+}
+.byflexbox .type3 .right {
+    width: 200px;
+}
+.byflexbox .type3 .left {
+    width: calc(100% - 200px);
+}
+
+
+.byflexbox .type4 {
+    display: flex;
+}
+.byflexbox .type4 .left {
+    order: -1;
+    width: 200px;
+    justify-content: flex-start;
+}
+.byflexbox .type4 .right {
+    width: 200px;
+    align-items: flex-end;
+}
+.byflexbox .type4 .main {
+    width: calc(100% - 400px);
+}
+
+
+.byflexbox .type5 {
+    display: flex;
+}
+.byflexbox .type5 .left {
+    order: -1;
+    width: 200px;
+    justify-content: flex-start;
+}
+.byflexbox .type5 .right {
+    width: 200px;
+}
+.byflexbox .type5 .main {
+    width: calc(100% - 400px);
+}
