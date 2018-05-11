@@ -15,12 +15,10 @@ body {
     display: inline-block;
 }
 .byfloat .type1 .left {
-    box-sizing: border-box;
     float: left;
     width: 30%;
 }
 .byfloat .type1 .right {
-    box-sizing: border-box;
     float: right;
     width: 70%;
 }
@@ -38,12 +36,10 @@ body {
 }
 
 
-.byfloat .type3 {
-    clear: both;
+.byfloat .type3  {
+    overflow: hidden;
 }
-
 .byfloat .type3 .left {
-    float: right;
     margin-right: 200px;
 }
 .byfloat .type3 .right {
@@ -51,9 +47,80 @@ body {
     width: 200px;
 }
 
+
 .byfloat .type4 {
     clear: both;
 }
-.byfloat .type4 {
+.byfloat .type4 .left,
+.byfloat .type4 .right,
+.byfloat .type4 .main{
+    float: left;
+}
+.byfloat .type4 .main {
+    width: 100%;
+}
+.byfloat .type4 .main-inner {
+    float: left;
+    margin: 0 200px 0  200px;
+}
+.byfloat .type4 .left {
+    width: 200px;
+    margin-left: -100%;
+}
+.byfloat .type4 .right {
+    width: 200px;
+    margin-left: -200px;
+}
 
+
+.byfloat .type5 {
+    clear: both;
+}
+.byfloat .type5 .left,
+.byfloat .type5 .right,
+.byfloat .type5 .main {
+    float: left;
+}
+.byfloat .type5 .left,
+.byfloat .type5 .right {
+    width: 200px;
+}
+.byfloat .type5 .main {
+    width: calc(100% - 400px);
+}
+
+.byposition {
+    clear: both;
+    background-color: #E0FFFF;
+}
+.byposition .type1 .left {
+    width: 30%;
+}
+.byposition .type1 .right {
+    position: relative;
+    top: -55px;
+    left: 30%;
+    width: 70%;
+}
+
+
+.byposition .type2 .left {
+    width: 200px;
+}
+.byposition .type2 .right {
+    position: relative;
+    top: -55px;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+
+.byposition .type3 .left {
+    width: calc(100% - 200px);
+}
+.byposition .type3 .right {
+    position: relative;
+    top: -55px;
+    left: calc(100% - 200px);
+    width: 200px;
 }
