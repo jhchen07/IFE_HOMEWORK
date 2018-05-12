@@ -64,13 +64,24 @@ a:after {
     right: 209px;
 }
 .banner li {
-    padding: 4px;
-    margin-right: 2px;
-    background-color: #3CB371;
+    padding: 0;
+    margin-right: 4px;
+    background-color: #74EBA9;
     border: .5px solid #20B2AA;
 }
-
+.banner  li a {
+    padding: 4px;
+    text-decoration: none;
+}
+.banner li a:hover,
+.banner li a:focus,
+.banner li a:active {
+    box-sizing: border-box;
+    background-color: #AFEEEE;
+}
 /*************************main***************************/
+
+/***********************菜单栏样式***********************/
 .navigation {
     border: 1px solid #696969;
 }
@@ -89,20 +100,67 @@ a:after {
     height: 35px;
     margin: 0;
     border: 1px solid #696969;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+        border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+        border-top-right-radius: 10px;
     border-bottom: #FFF;
-
 }
 .navigation li a {
     display: inline-block;
     width: 100%;
     line-height: 3;
-    font-size: .8em;
+    font-size: .5em;
     text-decoration: none;
     text-align: center;
     color: #000;
+    background-color: 	#A9A9A9;
+    -webkit-border-top-left-radius: 10px;
+        border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+        border-top-right-radius: 10px;
   }
+  .navigation li a:hover,
+  .navigation li a:focus,
+  .navigation li a:active {
+      background-color: #FFF;
+  }
+/**********************内容样式***************************/
+.panels {
+    width: 960px;
+    margin: 0 auto;
+}
+.panels article {
+    position: relative;
+}
+.content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.content p {
+    flex: 1 80px;
+    padding: 80px;
+    margin: 2px;
+    text-align: center;
+    border: .5px solid #696969;
+}
+.content p:nth-of-type(4) {
+    flex: 1 20px;
+}
+.content p:nth-of-type(5) {
+    flex: 1 20px;
+}
+.content p:nth-of-type(6) {
+    flex: 1 20px;
+}
+.content p:nth-of-type(7) {
+    flex: 1 20px;
+}
+.panels active .active-panel{
+    z-index: 1;
+}
+
+/********************消息盒子效果**************************/
 /*************************footer*************************/
 .footer {
     width: 100%;
@@ -110,7 +168,9 @@ a:after {
     background-color: #696969;
 }
 .footer p {
+    padding-top: 1em;
     text-align: center;
+    color: #FFF;
 }
 /***********************清除浮动*************************/
 .clearfix:before,

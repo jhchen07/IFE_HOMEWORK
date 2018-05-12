@@ -27,10 +27,18 @@
         </header>
         <div class="banner">
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
             </ul>
         </div>
         <main role="main" class="main clearfix">
@@ -64,7 +72,7 @@
                 </article>
                 <article>
                     <div class="content">
-                        <p>This is Content1</p>
+                        <p>This is Content2.1</p>
                         <p>Maybe Conten2</p>
                         <p>Content3</p>
                         <p>Content4</p>
@@ -78,7 +86,7 @@
                 </article>
                 <article>
                     <div class="content">
-                        <p>This is Content1</p>
+                        <p>This is Content3.1</p>
                         <p>Maybe Conten2</p>
                         <p>Content3</p>
                         <p>Content4</p>
@@ -99,6 +107,35 @@
             </p>
         </footer>
     </div>
+    <script>
+            var tabs = document.querySelectorAll('.navigation li a');
+            var panels = document.querySelectorAll('.panels article');
+        
+                for (i = 0; i < tabs.length; i++) {
+                    var tab = tabs[i];
+                    setTabHandler(tab, i);
+        }
+        
+                function setTabHandler(tab, tabPos) {
+                tab.onclick = function () {
+                    for (i = 0; i < tabs.length; i++) {
+                        if (tabs[i].getAttribute('class')) {
+                            tabs[i].removeAttribute('class');
+                        }
+                    }
+        
+                    tab.setAttribute('class', 'active');
+        
+                    for (i = 0; i < panels.length; i++) {
+                        if (panels[i].getAttribute('class')) {
+                            panels[i].removeAttribute('class');
+                        }
+                    }
+        
+                    panels[tabPos].setAttribute('class', 'active-panel');
+                }
+            }
+        </script>
 </body>
 
 </html>
