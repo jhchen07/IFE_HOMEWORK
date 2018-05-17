@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F8FF;
+}
+
+header {
+    box-sizing: border-box;
+    width: 1600px;
+    height: 993px;
+    color: #FFF;
+    background-image: url(images/background1.png);
+}
+main {
+
+}
