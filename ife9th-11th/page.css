@@ -1,8 +1,19 @@
-
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 body {
     font-family: 'Montserrat', sans-serif, 'Times New Roman';
     width: 100%;
     margin: 0 auto;
+    background: transparent;
 }
 /*首页样式设置*/
 header {
@@ -242,14 +253,18 @@ main .crew p {
     font-size: 18px;
     line-height: 1.56;
 }
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+main .crew .crewphoto {
+    display: flex;
+    flex: 1 30%;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    height: 35%;
+    margin: 15px;
 }
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
+main .crew .crewphoto .zsy {
+    width: 40%;
+    height: 100%;
+    background: transparent;
+    background-color: #808080;
+    background-image: url(images/zsy.png);
 }
