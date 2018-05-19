@@ -237,6 +237,7 @@ main .features .paragraph2 {
 
 /*crew*/
 main .crew {
+    position: static;
     width: 75%;
     height: 1000px;
     margin: 0 auto;
@@ -250,21 +251,57 @@ main .crew h2 {
 main .crew p {
     width: 70%;
     margin: 0 auto; 
-    font-size: 18px;
-    line-height: 1.56;
+    font-size: 17px;
+    line-height: 2.33;
 }
 main .crew .crewphoto {
     display: flex;
-    flex: 1 30%;
-    flex-flow: row wrap;
-    align-items: flex-start;
+    flex: 1 1 30%;
+    flex-flow: row wrap; 
     height: 35%;
-    margin: 15px;
 }
-main .crew .crewphoto .zsy {
-    width: 40%;
-    height: 100%;
-    background: transparent;
-    background-color: #808080;
-    background-image: url(images/zsy.png);
+main .crew .crewphoto article {
+    position: relative;
+    top: 25%;
+    float: left;
+    width: 464px;
+    height: 340px;
+    margin: 20px;
+    color: #FFF;
+    /* background-image: url(images/zsy.png); */
+}
+main .crew .crewphoto img {
+    margin: 20px;
+}
+main .crew .crewphoto #zsy {
+    position: absolute;
+    z-index: -1;
+    margin: 20px;
+}
+
+
+/*contacts*/
+main .contacts {
+    width: 75%;
+    height: 700px;
+    margin: 0 auto;
+}
+main .contacts .form {
+    float: left;
+    width: 50%;
+    height: 70%;
+    margin-right: 0;
+    border: .1px solid #000;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+}
+main .contacts .contact-content {
+    float: left;
+}
+
+/*footer*/ 
+footer {
+    height: 400px;
+    color: #FFF;
+    background-color: #000;
 }
