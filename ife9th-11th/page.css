@@ -15,7 +15,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif, 'Times New Roman';
-    width: 100%;
+    width: 100%;;
     margin: 0 auto;
     background: transparent;
 }
@@ -25,7 +25,7 @@ header {
     height: 993px;
     text-align: center;
     color: #FFF;
-    background: url(images/background1.png) no-repeat;
+    background: url(images/background1.png);
 }
 
 header h1 {
@@ -39,7 +39,7 @@ header h1 {
 header p {
     position: relative;
     top: 300px;
-    width: 60%;
+    width: 1000px;
     height: 85px;
     margin: 0 auto;
     line-height: 1.6;
@@ -50,7 +50,7 @@ header p {
 header .register {
     position: relative;
     top: 450px;
-    width: 75%;
+    width: 1200px;
     height: 250px;
     margin: 0 auto;
     border: .1px solid #FFF;
@@ -72,7 +72,7 @@ header .register input {
     box-sizing: border-box;
     position: relative;
     top: 80px;
-    width: 25%;
+    width: 300px;
     height: 50px;
     margin: 0 15px;
     padding-left: 1.5em;
@@ -81,7 +81,7 @@ header .register input {
     border: .1px solid #FFF;
 }
 header .register input[type="submit"] {
-    width: 10%;
+    width: 300px;
     height: 50px;
     padding: 0;
     color: #000;
@@ -142,7 +142,7 @@ main .support {
 main .support article {
     float: left;
     margin: 150px 0 50px 180px;
-    width: 30%;
+    width: 400px;
 }
 
 main .support article h2 {
@@ -158,8 +158,8 @@ main .support article p {
 main .support input {
     position: relative;
     top: 530px;
-    left: -30%;;
-    width: 235px;
+    left: -400px;
+    width: 20%;
     height: 60px;
     margin-right: 30px;
     border: .1px solid #FFF;
@@ -175,14 +175,14 @@ main .support input[id="try"] {
 main .support img {
     float: right;
     width: 40%;
-    height: 75%;
+    height: 600px;
     margin-top: 20px;
 }
 main .support #screen {
     position: absolute;
     right: 0;
     width: 36.3%;
-    height: 80%;
+    height: 530px;
     margin-top: 58px;
 }
 
