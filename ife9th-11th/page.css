@@ -9,6 +9,10 @@
 .clearfix {
     *zoom: 1;
 }
+/* * {
+    margin: 0;
+    padding: 0;
+} */
 body {
     font-family: 'Montserrat', sans-serif, 'Times New Roman';
     width: 100%;
@@ -268,10 +272,12 @@ main .crew .crewphoto article {
     height: 340px;
     margin: 20px;
     color: #FFF;
-    /* background-image: url(images/zsy.png); */
 }
 main .crew .crewphoto img {
     margin: 20px;
+}
+main .crew .crewphoto article .sociallink {
+    margin-left: 50px;
 }
 main .crew .crewphoto #zsy {
     position: absolute;
