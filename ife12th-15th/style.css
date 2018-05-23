@@ -8,6 +8,7 @@ body {
     /* box-sizing: border-box; */
     width: 100%;
     height: 100%;
+    min-height: 1200px;
     background: transparent;
 }
 
@@ -17,11 +18,12 @@ button {
     border: 0;
 }
 
+
 #menu .menu_left {
     float: left;
     left: 0;
     width: 100px;
-    height: 1000px; 
+    min-height: 1200px;
     margin: 0;
     background-color: #1D2531;
 }
@@ -37,9 +39,9 @@ button {
 
 #menu .menu_left .bottom {
     display: flex;
-    float: bottom;
+    position: absolute;
+    bottom: 0;
     flex-direction: row;
-    justify-content: center;
 }
 
 #menu .menu_left .middle {
@@ -53,7 +55,7 @@ button {
     top: 0;
     left: 0;
     width: 250px;
-    height: 1000px;
+    min-height: 1200px;
     padding: 0 20px 0 20px;
     color: #FFF;
     background-color: #222C3C;
@@ -102,6 +104,11 @@ button {
     margin: 10px 0;
 }
 
+main p {
+    font-size: 14px;
+    line-height: 1.35;
+    color: #585D68;
+}
 main #topbar {
     position: relative;
     top: 0;
@@ -150,24 +157,141 @@ main #chatslist {
     float: left;
     width: 400px;
     overflow: hidden;
+    border-right: .5px solid #B5B5B5;
+}
+
+main #chatslist .searchbar input {
+    width: 85%;
+    height: 40px;
+    margin:  10px 20px;
+    padding-left: 1em;
+    vertical-align: -webkit-baseline-middle;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    border: .5px solid #B5B5B5;   
+}
+
+main #chatslist .searchbar button {
+    position: relative;
+    top: -50px;
+    left: 0;
+    float: right;
+}
+
+main #chatslist .chatslist section {
+    box-sizing: border-box;
+    /* height: 130px; */
+    border-top: .5px solid #B5B5B5; 
+}
+
+main #chatslist .chatslist section h3 {
+    font-size: 16px;
+    margin: 20px 0 2px 0;
+}
+main #chatslist .chatslist section img {
+    float: left;
+    margin: 20px 20px 10px 20px;
+}
+
+main #chatslist .chatslist section .pic4 {
+    position: relative;
+    top: 20px;
+    right: -45px;
+    float: right;
+    margin: 15px 20px 0 10px;
+}
+main #chatslist .chatslist section span {
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #B5B5B5;
+}
+
+main #chatslist .chatslist section small {
+    color: #B5B5B5;
+}
+
+main #chatslist .chatslist section p {
+    margin: 15px 20px 10px 20px;
 }
 
 
+/*openchats style*/
+main #openchats {
+    
+    position: absolute;
+    float: left;
+    margin-left: 752px;
+}
+main #openchats #openchatstb {
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 0.5px solid #B5B5B5;
+}
+
+main #openchats #openchatstb .profilename p {
+    position: relative;
+    left: 0;
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main #openchats #openchatstb .tools {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+main #openchats #openchatstb .tools img,
+main #openchats #openchatstb .tools p {
+    float: right;
+}
+/*article style*/
+main #openchats article small {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5B6779;
+}
+main #openchats article div div {
+    margin: 10px;
+}
+main #openchats article img {
+    float: left;
+    margin: 10px 30px 10px 10px;
+}
+
+main #openchats article p {
+    margin-left: 90px;
+}
+
+main #openchats article h3 {
+    margin-bottom: 5px;
+}
+
+/*two pictures*/
+main #openchats article .tuesday .pictures {
+    margin-left: 80px;
+}
+
+main #openchats article .tuesday .pictures img {
+    position: relative;
+    margin-right: 10px;
+}
+
+main #openchats article .tuesday .pictures #base2:hover{
+    position: absolute;
+    background-image: url(images/base2add.png),
+                        url(images/openbase.png),
+                            url(images/open.png);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+main #openchats article .moremessage {
+    clear: both;
+}
 
 
 

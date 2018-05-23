@@ -101,35 +101,43 @@
             <div class="profile">
                 <img src="images/jj.png" alt="" />
                 <div class="text">
-                    <p><span>Jordan J.</span></p>
+                    <p>
+                        <span>Jordan J.</span>
+                    </p>
                     <p>Administrator</p>
-                    <a href="#" class="more"><img src="images/dropdown.png" alt=""></a>
+                    <a href="#" class="more">
+                        <img src="images/dropdown.png" alt="">
+                    </a>
                 </div>
-                
+
             </div>
         </section>
 
         <section id="chatslist">
             <div class="searchbar">
-                <input type="text" id="search" placeholder="search" />
-                <img src="images/search.png" alt="" />
+                <input type="search" id="search" name="search" placeholder="Search" />
+                <button type="submit" class="searchbtn">
+                    <img src="images/search.png" alt="" />
+                </button>
+                <!-- <img src="images/search.png" alt="" /> -->
             </div>
 
             <div class="chatslist">
                 <section id="chat1">
                     <img src="images/bb.png" alt="" />
                     <h3>Bessie Berry</h3>
-                    <p>Twitter</p>
+                    <small>Twitter</small>
                     <span>3m</span>
+                    <img src="images/4.png" class="pic4" alt="" />
                     <p>
                         I pay for the 4Mb/sec down, 512 Kb/sec up service from O2. In fact, it's really quick, and stable...
                     </p>
-                    <img src="images/4.png" alt="" />
+
                 </section>
                 <section id="chat2">
                     <img src="images/vw.png" alt="" />
                     <h3>Victor Weber</h3>
-                    <p>Adobe</p>
+                    <small>Adobe</small>
                     <span>8m</span>
                     <p>
                         I shared this on my fb wall a few months back, and I thought I'd share it here again because it's such a great...
@@ -138,7 +146,7 @@
                 <section id="chat3">
                     <img src="images/db.png" alt="" />
                     <h3>Dustin Benson</h3>
-                    <p>Facebook</p>
+                    <small>Facebook</small>
                     <span>Yesterday</span>
                     <p>
                         If there is anyone who needs an invitation please add yourself in the comments of this post!
@@ -147,7 +155,7 @@
                 <section id="chat4">
                     <img src="images/jm.png" alt="" />
                     <h3>Jack Mason</h3>
-                    <p>Yahoo</p>
+                    <small>Yahoo</small>
                     <span>Yesterday</span>
                     <p>
                         BruteDC is a peer-to-peer movie+tv series sharing and downloading platform which works on intranet inside...
@@ -156,7 +164,7 @@
                 <section id="chat5">
                     <img src="images/ss.png" alt="" />
                     <h3>Stephen Shelton</h3>
-                    <p>Snapchat</p>
+                    <small>Snapchat</small>
                     <span>13 Jun</span>
                     <p>
                         Yes, p2p traffic is often filtered (QoSed). Although i do use BT on O2 wires, and in good days dl speed...
@@ -165,7 +173,7 @@
                 <section id="chat6">
                     <img src="images/sw.png" alt="" />
                     <h3>Sally Willis</h3>
-                    <p>Twitter</p>
+                    <small>Twitter</small>
                     <span>12 Jun</span>
                     <p>
                         Yes, it's O2: 'internet extreme', which is no longer offered.
@@ -174,7 +182,7 @@
                 <section id="chat7">
                     <img src="images/rp.png" alt="" />
                     <h3>Robert Patton</h3>
-                    <p>A Team</p>
+                    <small>A Team</small>
                     <span>9 Jun</span>
                     <p>
                         I change my service from this 4Mb plan to their much cheaper 8Mb plan, my speed will dramatically decrease.
@@ -188,18 +196,19 @@
                     <p>Bessie Berry &bull;</p>
                 </div>
                 <div class="tools">
-                    <img src="images/addfriends.png" alt="" />
-                    <img src="images/upload.png" alt="" />
-                    <img src="images/delete.png" alt="" />
-                    <p>1 of 28</p>
-                    <img src="images/left.png" alt="" />
                     <img src="images/right.png" alt="" />
+                    <img src="images/left.png" alt="" />
+                    <img src="images/text.png" alt="" />
+                    <!-- <p>1 of 28</p> -->
+                    <img src="images/delete.png" alt="" />
+                    <img src="images/upload.png" alt="" />
+                    <img src="images/addfriends.png" alt="" />
                 </div>
                 <article>
                     <div class="today">
                         <div class="frombb">
                             <img src="images/bb.png" alt="" />
-                            <h3>Bessie Berry
+                            <h3>Bessie Berry&nbsp;
                                 <small>8:31 AM</small>
                             </h3>
                             <p>
@@ -211,7 +220,7 @@
                         </div>
                         <div class="himself">
                             <img src="images/jordanjackson.png" alt="" />
-                            <h3>Jordan Jackson
+                            <h3>Jordan Jackson&nbsp;
                                 <small>8:31 AM</small>
                             </h3>
                             <p>
@@ -226,10 +235,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="Tuesday">
+                    <div class="tuesday">
                         <div class="frombb">
                             <img src="images/bb.png" alt="" />
-                            <h3>Bessie Berry
+                            <h3>Bessie Berry&nbsp;
                                 <small>8:31 AM</small>
                             </h3>
                             <p>
@@ -239,7 +248,7 @@
                         </div>
                         <div class="himself">
                             <img src="images/jordanjackson.png" alt="" />
-                            <h3>Jordan Jackson
+                            <h3>Jordan Jackson&nbsp;
                                 <small>8:31 AM</small>
                             </h3>
                             <p>
@@ -250,16 +259,18 @@
                                 (note, bytes, not bits), my download speed suffers. This is expected, as downloads require
                                 upload bandwidth as well.
                             </p>
-                            <img src="images/back1.png" alt="" />
-                            <img src="images/base2.png" alt="" />
-                            <img src="images/base2add.png" alt="" />
-                            <img src="images/openbase.png" alt="" />
+                            <div class="pictures">
+                                <img src="images/back1.png" alt="" />
+                                <img src="images/base2.png" id="base2" alt="" />
+                                <!-- <img src="images/base2add.png" alt="" />
+                                <img src="images/openbase.png" alt="" /> -->
+                            </div>
                         </div>
                     </div>
                     <div class="moremessage">
                         <div class="frombb">
                             <img src="images/bb.png" alt="" />
-                            <h3>Bessie Berry
+                            <h3>Bessie Berry&nbsp;
                                 <small>8:31 AM</small>
                             </h3>
                             <p>
