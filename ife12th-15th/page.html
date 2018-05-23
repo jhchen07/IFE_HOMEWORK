@@ -5,72 +5,79 @@
     <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
     <title>complex page</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
 </head>
 
 <body>
     <section id="menu">
 
         <div class="menu_left">
-            <button type="submit" class="planebtn">
-                <img src="images/plane.png" alt="" />
-            </button>
-            <button type="submit" class="rocketbtn">
-                <img src="images/rocket.png" alt="" />
-            </button>
-            <button type="submit" class="gamehandle">
-                <img src="images/gamehandle.png" alt="" />
-            </button>
-            <button type="submit" class="addbtn">
-                <img src="images/add.png" alt="" />
-            </button>
-            <button type="submit" class="applicationbtn">
-                <img src="images/application.png" alt="" />
-            </button>
-            <button type="submit" class="settingbtn">
-                <img src="images/setting.png" alt="" />
-            </button>
+            <div class="top">
+                <button type="submit" class="planebtn">
+                    <img src="images/plane.png" alt="" />
+                </button>
+                <button type="submit" class="rocketbtn">
+                    <img src="images/rocket.png" alt="" />
+                </button>
+                <button type="submit" class="gamehandle">
+                    <img src="images/gamehandle.png" alt="" />
+                </button>
+                <button type="submit" class="addbtn">
+                    <img src="images/plus.png" alt="" />
+                </button>
+            </div>
+            <div class="middle">
+
+            </div>
+            <div class="bottom">
+                <button type="submit" class="applicationbtn">
+                    <img src="images/application.png" alt="" />
+                </button>
+                <button type="submit" class="settingbtn">
+                    <img src="images/setting.png" alt="" />
+                </button>
+            </div>
         </div>
 
         <div class="menu_right">
 
             <section class="part1">
                 <dl>
-                    <dt>MENU</dt>
                     <img src="images/setting.png" alt="" />
+                    <dt>MENU</dt>
                     <dd>Overview</dd>
-                    <dd>Sales</dd>
                     <img src="images/54.png" alt="" />
+                    <dd>Sales</dd>
                     <dd>Your Staff</dd>
                     <dd>Analytics & Targeting</dd>
-                    <dd>What’s New</dd>
+                    <dd>What's New</dd>
                 </dl>
             </section>
 
             <section class="part2">
                 <dl>
-                    <dt>YOUR PRODUCTS</dt>
                     <img src="images/setting.png" alt="" />
-                    <img src="images/books.png" alt="" />
+                    <dt>YOUR PRODUCTS</dt>
+                    <img src="images/books.png" class="images" alt="" width="20" />
                     <dd>Books</dd>
-                    <img src="images/tutorials.png" alt="" />
+                    <img src="images/tutorials.png" class="images" alt="" width="20" />
                     <dd>Tutorials</dd>
-                    <img src="images/stocks.png" alt="" />
+                    <img src="images/stocks.png" class="images" alt="" width="20" />
                     <dd>Stocks</dd>
-                    <img src="images/inforgraphic.png" alt="" />
+                    <img src="images/inforgraphic.png" class="images" alt="" width="20" />
                     <dd>Infographics</dd>
                 </dl>
             </section>
 
             <section class="part3">
                 <dl>
-                    <dt>DASHBOARD</dt>
                     <img src="images/setting.png" alt="" />
-                    <dd>Messages </dd>
+                    <dt>DASHBOARD</dt>
                     <img src="images/21.png" alt="" />
+                    <dd>Messages </dd>
                     <dd>Connections</dd>
-                    <dd>Integrations</dd>
                     <img src="images/emark.png" alt="" />
+                    <dd>Integrations</dd>
                     <dd>Account Settings</dd>
                     <dd>App Settings</dd>
                 </dl>
@@ -85,7 +92,7 @@
         </div>
     </section>
 
-    <main role="main">
+    <main role="main" class="main clearfix">
 
         <section id="topbar">
             <div class="title">
@@ -94,9 +101,11 @@
             <div class="profile">
                 <img src="images/jj.png" alt="" />
                 <div class="text">
-                    <p>Jordan J.</p>
+                    <p><span>Jordan J.</span></p>
                     <p>Administrator</p>
+                    <a href="#" class="more"><img src="images/dropdown.png" alt=""></a>
                 </div>
+                
             </div>
         </section>
 
