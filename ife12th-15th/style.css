@@ -1,3 +1,15 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -273,50 +285,47 @@ main #openchats article h3 {
 
 /*two pictures*/
 main #openchats article .tuesday .pictures {
+    position: relative;
     margin-left: 80px;
 }
 
 main #openchats article .tuesday .pictures img {
-    position: relative;
     margin-right: 10px;
 }
 
-main #openchats article .tuesday .pictures #base2:hover{
+main #openchats article .tuesday .pictures #base2 {
     position: absolute;
-    background-image: url(images/base2add.png),
-                        url(images/openbase.png),
-                            url(images/open.png);
 }
-
 
 main #openchats article .moremessage {
     clear: both;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+main #openchats article .moremessage .writenew img {
+    margin-right: 0;
 }
-.clearfix:after {
-    clear: both;
+main #openchats article .moremessage .writenew input{
+    position: relative;
+    float: left;
+    width: 85%;
+    height: 40px;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    vertical-align: -webkit-baseline-middle;
+    
 }
-.clearfix {
-    *zoom: 1;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
