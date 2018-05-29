@@ -9,6 +9,9 @@
 .clearfix {
     *zoom: 1;
 }
+::-webkit-scrollbar {
+    display:none
+}
 
 * {
     margin: 0;
@@ -66,7 +69,7 @@ button {
     top: 0;
     left: 0;
     width: 250px;
-    min-height: 1150px;
+    height: 1150px;
     padding: 0 20px 0 20px;
     color: #FFF;
     background-color: #222C3C;
@@ -99,22 +102,20 @@ button {
 
 }
 #menu .menu_right #severcapacity {
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    width: 250px;
 }
 
 #menu .menu_right #severcapacity p {
     display: inline-block;
-    margin: 0 20px 20px 0; 
+    margin: 0 10px 10px 0; 
     font-size: 14px;
     font-weight: 400;
 }
 
 #menu .menu_right #severcapacity img {
-    position: fixed;
-    bottom: -10px;
     float: left;
-    margin: 10px 0;
 }
 
 main p {
@@ -167,10 +168,10 @@ main #topbar .profile p span {
 }
 
 main #chatslist {
-    
     float: left;
     width: 400px;
-    overflow: hidden;
+    height: 1000px;
+    overflow: auto;
 }
 
 main #chatslist .searchbar input {
@@ -234,6 +235,8 @@ main #chatslist .chatslist #chat7 {
 main #openchats {
     position: absolute;
     float: left;
+    height: 1000px;
+    overflow: auto;
     margin-left: 752px;
     border-left: .5px solid #B5B5B5;
 }
