@@ -21,7 +21,7 @@ body {
     width: 100%;
     height: 100%;
     min-height: 1150px;
-    background: transparent;
+    /* background: transparent; */
 }
 
 button {
@@ -29,7 +29,6 @@ button {
     background: transparent;
     border: 0;
 }
-
 
 #menu .menu_left {
     float: left;
@@ -172,7 +171,7 @@ main #chatslist {
     float: left;
     width: 400px;
     overflow: hidden;
-    border-right: .5px solid #B5B5B5;
+    /* border-right: .5px solid #B5B5B5; */
 }
 
 main #chatslist .searchbar input {
@@ -234,6 +233,7 @@ main #openchats {
     position: absolute;
     float: left;
     margin-left: 752px;
+    border-left: .5px solid #B5B5B5;
 }
 main #openchats #openchatstb {
     box-sizing: border-box;
@@ -266,18 +266,41 @@ main #openchats article .wrap1 {
     position: relative;  
     text-align: center;
     min-width: 450px;
-    margin: 15px 0 15px 0;
+    height: 20px;
+    margin: 10px 0 10px 0;
+    line-height: 1.3;
     color: #B5B5B5;
 }
+
+main #openchats article .wrap1 .line {
+    display: inline-block;
+    width: 42.5%;
+    border-top: 1px solid #B5B5B5;
+}
+
+main #openchats article .wrap1 .txt {
+    width: 35px;
+    vertical-align: -4px;
+}
+
 main #openchats article .wrap2 {
     position: relative;  
     text-align: center;
     min-width: 450px;
-    margin: 15px 0 15px 0;
-    color: #00F;
+    height: 20px;
+    margin: 10px 0 10px 0;
+    line-height: 1.3;
+    color: 	#1E90FF;
 }
-main #openchats article hr {
-    border: .5px solid #B5B5B5;
+main #openchats article .wrap2 .txt {
+    width: 40px;
+    vertical-align: -4px;
+}
+
+main #openchats article .wrap2 .line {
+    display: inline-block;
+    width: 38%;
+    border-top: 1px solid #1E90FF;
 }
 
 main #openchats article small {
@@ -304,6 +327,7 @@ main #openchats article h3 {
 /*two pictures*/
 main #openchats article .tuesday .pictures {
     position: relative;
+    height: 120px;
     margin-left: 80px;
 }
 
@@ -311,17 +335,23 @@ main #openchats article .tuesday .pictures img {
     margin-right: 10px;
 }
 
-main #openchats article .tuesday .pictures #base2 {
+main #openchats article .tuesday .himself .pictures .openpic {
+    display: block;
     position: absolute;
+    left: 176px;
+    opacity: .7;
+    background: #000;
+    transition: display 1s;
 }
 
-main #openchats article .wrap2 {
-    clear: both;
+main #openchats article .tuesday .himself .pictures #base2:hover+.openpic,
+main #openchats article .tuesday .himself .pictures .openpic:hover {
+    display: none;
 }
-
 main #openchats article .moremessage .writenew img {
     margin-right: 0;
 }
+
 main #openchats article .moremessage .writenew input{
     position: relative;
     float: left;
