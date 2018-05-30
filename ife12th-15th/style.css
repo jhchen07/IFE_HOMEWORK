@@ -361,6 +361,7 @@ main #openchats article .tuesday .himself .pictures .openpic {
     opacity: .7;
     background: #000;
     transition: display 1s;
+    border-radius: 5px;
 }
 
 main #openchats article .tuesday .himself .pictures #base2:hover+.openpic,
