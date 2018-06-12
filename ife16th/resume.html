@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="resume_css.css" />
+</head>
+
+<body>
+  <h1 align="center">简&nbsp;&nbsp;&nbsp;&nbsp;历</h1>
+  <div class="information">
+    <ul>
+      <li>Name: Lanchen</li>
+      <li>Tel: 123-4567-8989</li>
+      <a href="mailto:name@email.com">Email:name@email.com</a>
+    </ul>
+  </div>
+  <button type="text" id="hobby" value="" onclick="displayHobby()">Click to see my hobbies</button>
+  <button type="text" id="contact" value="" onclick="displayContact()">Do you want to contact me?</button>
+  <h2>教育背景</h2>
+  <div class="back_ground">
+    <ul>
+      <li>本科（1900-1904）：明光村中学附属大学&nbsp;&nbsp;&nbsp;学士学位</li>
+      <li>硕士（1904-至今）：明光村中学附属大学&nbsp;&nbsp;&nbsp;在读</li>
+    </ul>
+  </div>
+
+  <h2>项目经历</h2>
+  <div class="experience">
+    <ul>
+      <li>百度</li>
+      <p>社会主义核心价值观是社会主义核心价值体系的内核，体现社会主义核心价值体系的根本性质和基本特征，反映社会主义核心价值体系的丰富内涵和实践要求，是社会主义核心价值体系的高度凝练和集中表达。</p>
+      <hr>
+      <li>阿里</li>
+      <p>党的十八大以来，中央高度重视培育和践行社会主义核心价值观。习近平总书记多次作出重要论述、提出明确要求。中央政治局围绕培育和弘扬社会主义核心价值观、弘扬中华传统美德进行集体学习。中办下发《关于培育和践行社会主义核心价值观的意见》。党中央的高度重视和有力部署，为加强社会主义核心价值观教育实践指明了努力方向，提供了重要遵循。</p>
+      <hr>
+      <li>腾讯</li>
+      <p>2017年10月18日，习近平同志在十九大报告中指出，要培育和践行社会主义核心价值观。要以培养担当民族复兴大任的时代新人为着眼点，强化教育引导、实践养成、制度保障，发挥社会主义核心价值观对国民教育、精神文明创建、精神文化产品创作生产传播的引领作用，把社会主义核心价值观融入社会发展各方面，转化为人们的情感认同和行为习惯。</p>
+    </ul>
+  </div>
+  <h2>个人技能</h2>
+  <div class="skills">
+    <ul>
+      <li>基础知识</li>
+      <p>富强、民主、文明、和谐</p>
+      <hr>
+      <li>英语水平</li>
+      <p>爱国、敬业、诚信、友善</p>
+      <hr>
+      <li>附加能力</li>
+      <p>自由、平等、公正、法治</p>
+    </ul>
+  </div>
+  <script>
+    function displayHobby() {
+      document.getElementById("hobby").innerHTML = "My hobby is liking you! What a conincidence!";
+    }
+    function displayContact() {
+      var mail;
+      var source;
+      mail = prompt("Please enter your content: ", "Come out and play with me!");
+      if (mail) {
+        alert("Now I've received your mail. Have a nice day!");
+      }
+    }
+  </script>
+</body>
+
+</html>

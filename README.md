@@ -14,3 +14,6 @@ https://jhchen07.github.io/IFE_HOMEWORK/ife9th-11th/page.html
 第12天到第15天作业demo地址：
 <br/>
 https://jhchen07.github.io/IFE_HOMEWORK/ife12th-15th/page.html
+<br/>
+第16天作业demo地址：
+https://jhchen07.github.io/IFE_HOMEWORK/ife16th/resume.html
