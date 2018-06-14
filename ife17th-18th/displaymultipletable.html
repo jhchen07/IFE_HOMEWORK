@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九九乘法表及其演示</title>
+    <style type="text/css">
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+        table th {
+            border: 1px #A60000 solid;
+        }
+    </style>
+</head>
+<body>
+<p>This is a demo of multiplication table</p>
+<button onclick="multiplicationTable()">Click here to see the table!</button>
+<script>
+    function multiplicationTable() {
+        var t = 0;
+        document.write("<table border='1'>");
+        document.write("<caption>九九乘法表</caption>");
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>");
+            for (var j = 1; j <= i; j++) {
+                t = i * j;
+                document.write("<th>"+j.toString() + " " + "* " + i.toString() + " " + "=" + t.toString()+"</th>");
+                // document.getElementsByTagName("td").innerHTML
+                //     = i.toString() + " " + "* " + j.toString() + " " + "= " + t.toString();
+                // console.log(i.toString() + " " + "* " + j.toString() + " " + "= " + t.toString());
+            }
+            document.write("</tr>");
+        }
+        document.write("</table");
+    }
+</script>
+</body>
+</html>

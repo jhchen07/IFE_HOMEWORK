@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a game</title>
+    <style>
+        button {
+            height: 30px;
+            padding: 2px;
+            margin: 5px 5px 5px 20px;
+            border-style: none;
+            border-radius: 5px;
+            background-color: #DC6A8F;
+            box-shadow: 2px 2px 2px #333;
+        }
+    </style>
+</head>
+<body>
+<p>This is a small game about number three. <br >Click the button to see the result!</p>
+<button onclick="play()">Play!</button>
+<script>
+    function play() {
+        for (var i = 1; i <= 100; i++) {
+            if (i%3 === 0) {
+                console.log("PA");
+            }
+            else if (i.toString().indexOf("3") != -1) {
+                console.log("PA");
+            }else {
+                console.log(i.toString());
+            }
+        }
+    }
+</script>
+</body>
+</html>
