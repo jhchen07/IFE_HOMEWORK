@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="resume_css.css" />
 </head>
 
-<body>
+<body onload="greet()">
 <h1 align="center">简&nbsp;&nbsp;&nbsp;&nbsp;历</h1>
 <div class="information">
     <ul>
@@ -49,16 +49,24 @@
     </ul>
 </div>
 <script>
-    var date = new Date();
-    var hour = date.getHours();
-    if (hour >=0 || hour < 12) {
-        alert("Good morning!");
-    } else if (hour >= 12 || hour <= 18){
-        alert("Good afternoon!");
-    } else {
-        alert("Good evening!");
+    function greet() {
+        var date = new Date();
+        var hour = date.getHours();
+        //练习使用switch语句
+        switch (true) {
+            case(hour < 12):
+                alert("Good morning!");
+                break;
+            case (hour >= 12 && hour < 18):
+                alert("Good afternoon!");
+                break;
+            case (hour >= 18):
+                alert("Good evening!");
+                break;
+            default:
+                alert("Welcome!");
+        }
     }
-    alert("Welcome!");
 </script>
 </body>
 
