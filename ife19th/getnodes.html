@@ -7,96 +7,100 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="news-top" class="section">
-            <h3>Some title</h3>
-            <div class="content">
-                <ul>
-                    <li>
-                        <span>HTML</span>
-                        <a href="">Some Link1</a>
-                    </li>
-                    <li>
-                        <span>JS</span>
-                        <a class="active" href="">Some Link2</a>
-                    </li>
-                    <li>
-                        <span>CSS</span>
-                        <a href="">Some Link3</a>
-                    </li>
-                    <li>
-                        <span>JS</span>
-                        <a href="">Some Link4</a>
-                    </li>
-                </ul>
-            </div>
-            <img src="">
-            <p class="">Some Text</p>
+<div id="wrapper">
+    <div id="news-top" class="section">
+        <h3>Some title</h3>
+        <div class="content">
+            <ul>
+                <li>
+                    <span>HTML</span>
+                    <a href="">Some Link1</a>
+                </li>
+                <li>
+                    <span>JS</span>
+                    <a class="active" href="">Some Link2</a>
+                </li>
+                <li>
+                    <span>CSS</span>
+                    <a href="">Some Link3</a>
+                </li>
+                <li>
+                    <span>JS</span>
+                    <a href="">Some Link4</a>
+                </li>
+            </ul>
         </div>
-        <div id="news-normal" class="section">
-            <h3>Some title</h3>
-            <div class="content">
-                <ul>
-                    <li>
-                        <span>HTML</span>
-                        <a href="">Some Link1</a>
-                    </li>
-                    <li>
-                        <span>HTML</span>
-                        <a href="">Some Link2</a>
-                    </li>
-                    <li>
-                        <span>JS</span>
-                        <a class="active" href="#">Some Link3</a>
-                    </li>
-                    <li>
-                        <span>CSS</span>
-                        <a href="">Some Link4</a>
-                    </li>
-                </ul>
-            </div>
-            <img src="">
-            <p class="">Some Text</p>
-        </div>
+        <img src="">
+        <p class="">Some Text</p>
     </div>
-    <script>
+    <div id="news-normal" class="section">
+        <h3>Some title</h3>
+        <div class="content">
+            <ul>
+                <li>
+                    <span>HTML</span>
+                    <a href="">Some Link1</a>
+                </li>
+                <li>
+                    <span>HTML</span>
+                    <a href="">Some Link2</a>
+                </li>
+                <li>
+                    <span>JS</span>
+                    <a class="active" href="#">Some Link3</a>
+                </li>
+                <li>
+                    <span>CSS</span>
+                    <a href="">Some Link4</a>
+                </li>
+            </ul>
+        </div>
+        <img src="">
+        <p class="">Some Text</p>
+    </div>
+</div>
+<script>
 
-        function getAllListItem() {
-            // 返回页面中所有li标签
-            var element_li = document.getElementsByTagName("li");
-            for (var i = 0; i <= element_li.length; i++) {
-                document.write(element_li[i].value);
+    function getAllListItem() {
+        // 返回页面中所有li标签
+        var element_li = document.getElementsByTagName("li");
+        for (var i = 0; i < element_li.length; i++) {
+            console.log(element_li);
+        }
+    }
+
+    function findAllHtmlSpanInOneSection(sectionId) {
+        // 返回某个section下所有span中内容为HTML的span标签
+        var element_html = document.getElementById("sectionId").getElementsByTagName("span");
+        for (var i = 0; i < element_html.length; i++) {
+            if (element_html[i].innerHTML === "HTML") {
+                console.log(element_html[i]);
             }
         }
+    }
 
-        function findAllHtmlSpanInOneSection(sectionId) {
-            // 返回某个section下所有span中内容为HTML的span标签
-            var element_html = document.getElementById("sectionId").getElementsByTagName("span");
-            for (var i = 0; i < element_html.length; i++) {
-                if (element_html[i].innerHTML === "HTML") {
-                    return element_html[i];
+    function findListItem(sectionId, spanCont) {
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+        var element_li = document.getElementById("sectionId").getElementsByTagName("li");
+        var element_span = element_li.getElementsByTagName("span");
+        var element_spanCont;
+        if (element_span) {
+            for (var i = 0; i < element_span.length; i++) {
+                if (element_span[i].innerHTML === spanCont.toString()) {
+                    console.log(element_span[i]);
                 }
             }
         }
+    }
 
-        function findListItem(sectionId, spanCont) {
-            // 返回某个section下，所有所包含span内容为spanCont的LI标签
-            var element_spanCont = document.getElementById("sectionId").getElementsByTagName("span");
-            for (var i = 0; i < element_spanCont.length; i++) {
-                if (element_spanCont[i].innerHTML === "HTML") {
-                    return element_spanCont[i];
-                }
-            }
+    function getActiveLinkContent(sectionId) {
+        // 返回某个section下，class为active的链接中包含的文字内容
+        var element_txt = document.getElementById("sectionId").getElementsByClassName("active");
+        for (var i = 0; i <= element_txt.length; i++) {
+            console.log(element_txt.innerText);
         }
-
-        function getActiveLinkContent(sectionId) {
-            // 返回某个section下，class为active的链接中包含的文字内容
-            var element_txt = document.getElementById("sectionId").getElementsByClassName("active");
-            for (var i = 0; i <= element_txt.length; i++) {
-                return element_txt.innerText;
-            }
-        }
-    </script>
+    }
+</script>
 </body>
 
 </html>
