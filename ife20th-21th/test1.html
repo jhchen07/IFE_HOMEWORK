@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A simple test for events</title>
+</head>
+<body>
+<input id="name" type="text">
+<button id="submit-btn">Submit</button>
+<script>
+    var btn = document.getElementById("submit-btn");
+    var text = document.getElementById("name");
+
+    function click(e) {
+        console.log(text.value);
+        text.focus();
+    }
+
+    //没有解决按键判断的功能
+    function enter() {
+        if (window.event.keyCode == 100) console.log(text.value);
+
+    }
+
+    function cancel() {
+        if (window.event.keyCode == 27) text.value = "";
+
+    }
+
+    btn.addEventListener("click", click);
+    btn.addEventListener("keyUp", enter);
+    btn.addEventListener("keyUp", cancel);
+</script>
+</body>
+</html>
