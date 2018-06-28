@@ -21,43 +21,17 @@
     var face = document.getElementById("erikface");
     var y = face.getAttribute("background-position-y");
     y = Number(y);
-    var t;
-    var t1;
 
-    setInterval("changery()", 1000);
     function changery() {
-        if (y > -8160) {
-            t = setInterval(function () {
-                minus();
-                if (y == -8160) {
-                    clearInterval(t);
-                    console.log("ct");
-                }
-            }, 100);
-            t1 = setInterval(function () {
-                plus();
-                if (y == 0) {
-                    clearInterval(t1);
-                    console.log("ct1");
-                }
-            }, 100);
-        }
-    }
-
-    function minus() {
-        if (y > -8160) {
+        var t = setInterval(function () {
             y -= 480;
             face.style.backgroundPositionY = y + "px";
-        }
+            if (y == -8160) {
+                face.style.backgroundPositionY = 0 + "px";
+            }
+        }, 100);
     }
-
-    function plus() {
-        if (y < 0) {
-            y += 480;
-            face.style.backgroundPositionY = y + "px";
-        }
-    }
-
+    changery();
 
 </script>
 </body>
