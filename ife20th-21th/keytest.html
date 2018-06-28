@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A simple test for events</title>
+    <script src="../js/event.js"></script>
+</head>
+
+<body>
+<input id="name" type="text">
+<button id="submit-btn">Submit</button>
+<script>
+    var btn = document.getElementById("submit-btn");
+        text = document.getElementById("name");
+
+    var clickHandler = function () {
+        console.log(text.value);
+        text.focus();
+    }
+    EventUtil.addHandlers(btn, "click", clickHandler);
+
+    //要区分不同事件作用的类型
+    document.onkeydown = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        var x = e.which || e.keyCode;
+        if (x == 13) {
+            console.log(text.value);
+        } else if (x == 27) {
+            text.value = "";
+        }
+    }
+
+</script>
+</body>
+
+</html>

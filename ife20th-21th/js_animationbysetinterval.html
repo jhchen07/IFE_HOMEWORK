@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use javascript to make animation</title>
+    <script src="../js/event.js"></script>
+</head>
+<body>
+<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+<button id="fade-btn">淡出</button>
+<script>
+    var fade_obj = document.getElementById("fade-obj");
+    var fade_btn = document.getElementById("fade-btn");
+    var t;
+    var x;
+    var op;
+    fade_obj.style.opacity = "1";
+
+    var int = setInterval("fadeOut()", 1000);
+    var fadeOut = function () {
+        op = parseFloat(fade_obj.style.opacity);
+
+        if (op == 1) {
+            fade_btn.disable = false;
+        } else fade_btn.disabled = true;
+
+        console.log(fade_obj.style.opacity);
+
+        if (op > 0) {
+            fade_obj.style.opacity = (op - 0.1).toString();
+        } else if (op == 0) {
+            fade_btn.innerHTML = "淡入";
+            int = window.clearInterval(int);
+        }
+    }
+
+</script>
+</body>
+</html>

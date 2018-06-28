@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>IFE ECMAScript</title>
+    <script src="../js/event.js"></script>
     <style>
         .palette {
             margin: 0;
@@ -32,15 +33,28 @@
 <p class="color-picker"></p>
 
 <script>
-    var list = document.querySelectorAll("li");
-    for (var i = i = 0, len = list.length; i < len; i++) {
-        list[i].onclick = function(e) {
-            var t = e.target;
-            var p = document.getElementsByClassName("color-picker")[0];
+    var ull = document.querySelector("ul");
+    var p = document.getElementsByClassName("color-picker")[0];
+
+    //根据事件委托进行重构
+    ull.onclick = function (event) {
+        event = EventUtil.getEvent(event);
+        var t = EventUtil.getTarget(event);
+        if (t.nodeName.toLowerCase() === "li"){
             p.innerHTML = t.style.backgroundColor;
             p.style.color = t.style.backgroundColor;
         }
     }
+
+    // var list = document.querySelectorAll("li");
+    // for (var i = i = 0, len = list.length; i < len; i++) {
+    //     list[i].onclick = function(e) {
+    //         var t = e.target;
+    //         var p = document.getElementsByClassName("color-picker")[0];
+    //         p.innerHTML = t.style.backgroundColor;
+    //         p.style.color = t.style.backgroundColor;
+    //     }
+    // }
 </script>
 </body>
 </html>

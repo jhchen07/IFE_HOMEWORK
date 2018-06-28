@@ -34,14 +34,23 @@
     var com = document.getElementById("company");
     var school_select = document.getElementById("school-select");
     var company_select = document.getElementById("company-select");
-    sch.onclick = function () {
-        company_select.style.display = "none";
-        school_select.style.display = "block";
+
+    var displaydemo = function (element){
+        element.style.display = "block";
     }
 
-    com.onclick = function () {
-        company_select.style.display = "block";
-        school_select.style.display = "none";
+    var hiddendemp = function(element){
+        element.style.display = "none";
+    }
+    window.onload = function () {
+        sch.onclick = function () {
+            displaydemo(school_select);
+            hiddendemp(company_select);
+        }
+        com.onclick = function () {
+            displaydemo(company_select);
+            hiddendemp(school_select);
+        }
     }
 </script>
 </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a smile</title>
+    <script src="../js/addLoadEvent.js"></script>
+    <style>
+        #erikface {
+            opacity: 1;
+            width: 480px;
+            height: 480px;
+            background-image: url(img/erik_ce204002.jpg);
+            background-position-x: 0;
+            background-position-y: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="erikface" title="百度EFE团队 Web前端主任架构师 erik" class="section-practice-img"></div>
+<script>
+    var face = document.getElementById("erikface");
+    var y = face.getAttribute("background-position-y");
+    y = Number(y);
+    var t;
+    var t1;
+
+    setInterval("changery()", 1000);
+    function changery() {
+        if (y > -8160) {
+            t = setInterval(function () {
+                minus();
+                if (y == -8160) {
+                    clearInterval(t);
+                    console.log("ct");
+                }
+            }, 100);
+            t1 = setInterval(function () {
+                plus();
+                if (y == 0) {
+                    clearInterval(t1);
+                    console.log("ct1");
+                }
+            }, 100);
+        }
+    }
+
+    function minus() {
+        if (y > -8160) {
+            y -= 480;
+            face.style.backgroundPositionY = y + "px";
+        }
+    }
+
+    function plus() {
+        if (y < 0) {
+            y += 480;
+            face.style.backgroundPositionY = y + "px";
+        }
+    }
+
+
+</script>
+</body>
+</html>
