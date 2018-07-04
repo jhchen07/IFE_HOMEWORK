@@ -19,7 +19,7 @@
             result = result.slice(1);
         }
         while (result.indexOf(" ") == len || result.charCodeAt(len) == 12288) {
-            result = result.slice(0, len-1);
+            result = result.slice(0, len - 1);
             len -= 1;
         }
         return result;
@@ -40,16 +40,14 @@
     */
     function removeRepetition(str) {
         var result = "";
-        var j = 0;
-        result = str[0];
+        var result_len;
         for (var i = 0; i < str.length; i++) {
-            j = i + 1;
-                while (result[i] == result[j] && j < str.length){
-                    
-                    j++;
-                }
+            result_len = result.length;
+            //!result_len给result添加一个元素，当且仅当result有长度时，才能与str相比较
+            if (!result_len ||(result_len && result[result_len - 1] !== str[i])){
+                result = result.concat(str[i]);
             }
-        result = result.split(" ").join(" ");
+        }
         return result;
     }
 
