@@ -26,8 +26,10 @@
     }
     
     in_q.onclick = function inQueue() {
-        queue.push(getInput());
-        _output.textContent = "队列内容："+queue.toString().split(",").join("->");
+        if (getInput()){
+            queue.push(getInput());
+            _output.textContent = "队列内容："+queue.toString().split(",").join("->");
+        }
     }
 
     out_q.onclick = function outQueue() {
